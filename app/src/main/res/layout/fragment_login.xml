@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mycolorlight2">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mycolorlight2"
+        tools:context=".LoginFragment">
+
+
+        <TextView
+            android:id="@+id/email_textView"
+            style="@style/textView_style"
+            android:layout_marginTop="44dp"
+            android:text="@string/email_text"
+            android:textColor="@color/mycolordark2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            style="@style/textView_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/enterEmailHint"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#607D8B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_textView" />
+
+        <TextView
+            android:id="@+id/password_textview"
+            style="@style/textView_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/password_text"
+            android:textColor="@color/mycolordark2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.338"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
+
+        <EditText
+            android:id="@+id/password_editText"
+            style="@style/textView_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/enterPasswordHint"
+            android:inputType="textPassword"
+            android:textColorHint="#607D8B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_textview" />
+
+        <Button
+            android:id="@+id/login_button"
+            style="@style/textView_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bottonMargin"
+            android:background="@color/mycolordark2"
+            android:text="@string/loginBottonText"
+            android:textAlignment="center"
+            android:textColor="@color/mycolorlight2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_editText" />
+
+        <Button
+            android:id="@+id/signup_button"
+            style="@style/textView_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bottonMargin"
+            android:background="@color/mycolordark2"
+            android:text="@string/signup"
+            android:textAlignment="center"
+            android:textColor="@color/mycolorlight2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</layout>
